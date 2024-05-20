@@ -1,0 +1,39 @@
+Tokens para la expresión: 3 + 4 * (2 - 1) ^ 2
+LexToken(NUMERO,3,1,0)
+LexToken(MAS,'+',1,2)
+LexToken(NUMERO,4,1,4)
+LexToken(POR,'*',1,6)
+LexToken(PARENTESISIZQ,'(',1,8)
+LexToken(NUMERO,2,1,9)
+LexToken(MENOS,'-',1,11)
+LexToken(NUMERO,1,1,13)
+LexToken(PARENTESISDER,')',1,14)
+LexToken(POTENCIA,'^',1,16)
+LexToken(NUMERO,2,1,18)
+Resultado del análisis:
+7
+
+Tokens para la expresión: -4 ^ 0.5
+LexToken(MENOS,'-',1,0)
+LexToken(NUMERO,4,1,1)
+LexToken(POTENCIA,'^',1,3)
+LexToken(NUMERO,0.5,1,5)
+Resultado del análisis:
+Error semántico: Raíz cuadrada de un número negativo
+None
+
+Tokens para la expresión: 16 ^ 0.5
+LexToken(NUMERO,16,1,0)
+LexToken(POTENCIA,'^',1,3)
+LexToken(NUMERO,0.5,1,5)
+Resultado del análisis:
+4.0
+
+Tokens para la expresión: 1 / 0
+LexToken(NUMERO,1,1,0)
+LexToken(DIVIDIDO,'/',1,2)
+LexToken(NUMERO,0,1,4)
+Resultado del análisis:
+Error semántico: División por cero
+None
+
