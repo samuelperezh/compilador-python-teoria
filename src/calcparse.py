@@ -1,3 +1,4 @@
+# Analizador sintáctico y semántico (el semántico está en las reglas de producción)
 import ply.yacc as yacc  # Importamos la librería ply.yacc para construir el analizador sintáctico.
 from src.calclex import tokens  # Importamos los tokens definidos en el archivo calclex.py.
 

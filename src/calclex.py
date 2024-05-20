@@ -1,3 +1,4 @@
+# Analizador léxico
 import ply.lex as lex  # Importamos la librería ply.lex para construir el analizador léxico.
 
 # Definición de tokens que representan las unidades léxicas básicas que el analizador reconocerá.
